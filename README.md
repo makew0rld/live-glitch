@@ -20,6 +20,7 @@ style effects in real time, using the webcam.
 - Tears (`t` key)
 - Screenshot (`s` key)
 - Record video (`r` key to start and then stop)
+- See debug info like FPS, face points, etc (`d` key)
 
 ## Commandline
 ```
@@ -36,19 +37,24 @@ optional arguments:
 No options are required, I would recommend just running it as is, and changing
 DISPLAY_WIDTH if the output is too small.
 
+# Dependencies
+1. Install OpenCV for your system. It should come with Python bindings, don't install it through pip.
+2. `pip3 install -U --user Pillow numpy dlib imutils`
 
-## Similar projects
-- VaporWaveArt ([article](https://towardsdatascience.com/computer-vision-for-vaporwave-art-32a330c827ee), [repo](https://github.com/TimChinenov/VaporWaveArt))
-by @TimChinenov. This project helped inspire and direct a lot of what I've done here.
-  - Not live, operates on static images
-  - Adds vaporwave style icons/imagery and text on top
-  
+Installing [dlib](http://dlib.net) will take a long time, and is resource intensive. You should leave
+your computer and do something else while it's installing.
+
 ## Features to add
 - Maybe icons/imagery
 - Random VHS-style rolling glitch, where a whole top or bottom section is shifted a bit to the left or right
 - Eye removal
 - Test on platforms other than Linux and Python 3.8
 
+## Similar projects
+- VaporWaveArt ([article](https://towardsdatascience.com/computer-vision-for-vaporwave-art-32a330c827ee), [repo](https://github.com/TimChinenov/VaporWaveArt))
+by @TimChinenov. This project helped inspire and direct a lot of what I've done here.
+  - Not live, operates on static images
+  - Adds vaporwave style icons/imagery and text on top
 
 ## License
 GPL version 3. See [LICENSE](./LICENSE) for details.

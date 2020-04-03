@@ -35,7 +35,6 @@ print(args)
 
 print("[INFO] loading models...")
 face_net_dnn = cv2.dnn.readNetFromCaffe(os.path.join(RESOURCE_PATH, "deploy.prototxt.txt"), os.path.join(RESOURCE_PATH, "res10_300x300_ssd_iter_140000.caffemodel"))
-bg_sub = cv2.createBackgroundSubtractorMOG2(detectShadows=False)
 facial_landmarker = dlib.shape_predictor(os.path.join(RESOURCE_PATH, "shape_predictor_68_face_landmarks.dat"))
 
 # Initialize the video stream and allow the camera sensor to warm up
