@@ -13,7 +13,7 @@ import imutils
 import imutils.face_utils
 from imutils.face_utils import FACIAL_LANDMARKS_68_IDXS
 # Import my modified imutils.video package
-MODULE_PATH = os.path.join("imutils-fixed-resolution", "imutils", "video", "__init__.py")
+MODULE_PATH = os.path.join("imutils_video", "__init__.py")
 MODULE_NAME = "imutils.video"
 spec = importlib.util.spec_from_file_location(MODULE_NAME, MODULE_PATH)
 imutils_video = importlib.util.module_from_spec(spec)
