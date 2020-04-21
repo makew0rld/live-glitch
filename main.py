@@ -3,7 +3,7 @@ import cv2
 import time
 from PIL import ImageFont, ImageDraw, Image
 import random
-import importlib
+from importlib import util
 import sys
 from fps import FPS
 import dlib
@@ -15,8 +15,8 @@ from imutils.face_utils import FACIAL_LANDMARKS_68_IDXS
 # Import my modified imutils.video package
 MODULE_PATH = os.path.join("imutils_video", "__init__.py")
 MODULE_NAME = "imutils.video"
-spec = importlib.util.spec_from_file_location(MODULE_NAME, MODULE_PATH)
-imutils_video = importlib.util.module_from_spec(spec)
+spec = util.spec_from_file_location(MODULE_NAME, MODULE_PATH)
+imutils_video = util.module_from_spec(spec)
 sys.modules[spec.name] = imutils_video 
 spec.loader.exec_module(imutils_video)
 
