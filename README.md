@@ -18,6 +18,7 @@ style effects in real time, using the webcam.
   - `/` key - Flip orientation
   - Up and down arrows - change glitching speed
 - Tears (`t` key)
+- Censor / Blackout bar (`b` key)
 - Screenshot (`s` key)
 - Record video (`r` key to start and then stop)
 - See debug info like FPS, face points, etc (`d` key)
